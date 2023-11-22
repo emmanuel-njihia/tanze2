@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.tanze.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.tanze.app.modules.challengesone.ui.ChallengesOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.createuserprofile.ui.CreateUserProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.billoninitiativeactivity.ui.BillonInitiativeActivityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.challenges.ui.ChallengesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.quizlevelone.ui.QuizLevelOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.landingpagemain.ui.LandingPageMainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.tanze.app.modules.homepage.ui.HomepageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tanze.app.modules.specifictreeinfo.ui.SpecificTreeInfoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.rightanswerone.ui.RightAnswerOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.rightanswer.ui.RightAnswerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.invitefriends.ui.InviteFriendsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.countryselection.ui.CountrySelectionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.rightanswertwo.ui.RightAnswerTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.activities.ui.ActivitiesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.quizleveloneone.ui.QuizLevelOneOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.selectlanguage.ui.SelectLanguageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.leaderboard.ui.LeaderboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.treesenglishpage.ui.TreesEnglishPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tanze.app.modules.createuserprofileone.ui.CreateUserProfileOneActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

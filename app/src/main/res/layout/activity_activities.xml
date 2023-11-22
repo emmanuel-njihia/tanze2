@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="activitiesVM" type="com.tanze.app.modules.activities.data.viewmodel.ActivitiesVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumncloudshapeone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowcloudshapeone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackcloudshapeone"
+                    android:layout_height="@dimen/_102pxv" android:layout_width="@dimen/_75pxh">
+                    <ImageView android:id="@+id/imageCloudshapeone"
+                        android:layout_gravity="top|center"
+                        android:layout_height="@dimen/_54pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_cloudshapeone_orange_51}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone_orange_51"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_lime_900_radius_24_5"
+                        android:id="@+id/btnBackButton"
+                        android:layout_gravity="bottom|end"
+                        android:layout_height="@dimen/_49pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_49pxh"
+                        android:paddingHorizontal="@dimen/_8pxh"
+                        android:paddingVertical="@dimen/_8pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_backbutton" tools:ignore="ContentDescription"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/imageEllipseFour"
+                    android:layout_height="@dimen/_49pxh"
+                    android:layout_marginStart="@dimen/_237pxh"
+                    android:layout_marginTop="@dimen/_53pxv"
+                    android:layout_width="@dimen/_49pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse4}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnactivity"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtActivity"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_15pxh"
+                android:singleLine="true"
+                android:text="@{activitiesVM.activitiesModel.txtActivity}"
+                style="@style/txtPoppinsextrabold30" tools:text="@string/lbl_activity"/>
+            <TextView android:id="@+id/txtRecordavideo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:text="@{activitiesVM.activitiesModel.txtRecordavideo}"
+                style="@style/txtPoppinslight20" tools:text="@string/msg_record_a_video"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowrectangletwentythree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_31pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_orange_53_border_lime_900_radius_10"
+                    android:id="@+id/viewRectangleTwentyThree"
+                    android:layout_height="@dimen/_91pxh" android:layout_width="@dimen/_93pxh"/>
+                <FrameLayout android:id="@+id/frameStackadd"
+                    android:layout_height="@dimen/_70pxv"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="@dimen/_70pxh" style="@style/groupStyleorange_3">
+                    <ImageView android:id="@+id/imageAdd"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_50pxh"
+                        android:layout_marginHorizontal="@dimen/_10pxh"
+                        android:layout_marginVertical="@dimen/_10pxv"
+                        android:layout_width="@dimen/_50pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_add}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_add"/>
+                </FrameLayout>
+            </LinearLayout>
+            <EditText
+                android:background="@drawable/rectangle_bg_orange_53_radius_10"
+                android:ellipsize="end"
+                android:hint="@string/msg_how_do_you_nurt"
+                android:id="@+id/etGroupFour" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_10pxh"
+                android:paddingBottom="@dimen/_9pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_11pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@={activitiesVM.activitiesModel.etGroupFourValue}"
+                android:textColorHint="@color/gray_400"
+                style="@style/etSolidRounded_3" tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSave"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_111pxh"
+                android:layout_marginStart="@dimen/_111pxh"
+                android:layout_marginTop="@dimen/_274pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_9pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_9pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_save"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_save"/>
+            <View android:background="@color/bluegray_100"
+                android:id="@+id/viewRectangleFiftyNine"
+                android:layout_height="@dimen/_76pxv"
+                android:layout_marginTop="@dimen/_36pxv" android:layout_width="@dimen/_390pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

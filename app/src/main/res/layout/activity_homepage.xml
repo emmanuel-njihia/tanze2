@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homepageVM" type="com.tanze.app.modules.homepage.data.viewmodel.HomepageVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearHomepage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleorange_50">
+        <FrameLayout android:id="@+id/frameStacktanze"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_123pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_102pxv" android:layout_width="@dimen/_284pxh">
+            <TextView android:ellipsize="end" android:id="@+id/txtTanze"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_75pxh"
+                android:layout_marginStart="@dimen/_75pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homepageVM.homepageModel.txtTanze}"
+                style="@style/txtDarumadropOneregular50" tools:text="@string/lbl_tanze"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtAClimatechan"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:text="@{homepageVM.homepageModel.txtAClimatechan}"
+                style="@style/txtMontserratromanmedium20" tools:text="@string/msg_a_climate_chan"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/imageCloudshapeone"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_61pxh"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="@dimen/_112pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_cloudshapeone"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone"/>
+        <FrameLayout android:id="@+id/frameStackcloudshapeoneOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_213pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_32pxv" android:layout_width="@dimen/_332pxh">
+            <ImageView android:id="@+id/imageCloudshapeoneOne"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_61pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="@dimen/_112pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_cloudshapeone"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone"/>
+            <ImageView android:id="@+id/imageCloudFrameTwo"
+                android:layout_gravity="top|end"
+                android:layout_height="@dimen/_54pxh"
+                android:layout_marginBottom="@dimen/_61pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_61pxv"
+                android:layout_width="@dimen/_112pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_cloudshapeone"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone"/>
+            <ImageView android:id="@+id/imageLandingpageOne"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_207pxh"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="@dimen/_207pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_landingpage1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_landingpage1"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnJoinIn"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_157pxv"
+            android:layout_width="@dimen/_170pxh"
+            android:paddingBottom="@dimen/_9pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_join_in"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_join_in"/>
+    </LinearLayout>
+</layout>

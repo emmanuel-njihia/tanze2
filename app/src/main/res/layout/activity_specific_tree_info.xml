@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="specificTreeInfoVM" type="com.tanze.app.modules.specifictreeinfo.data.viewmodel.SpecificTreeInfoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumncloudshapeone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearSpecificTreeI"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageCloudshapeone"
+                    android:layout_height="@dimen/_54pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_74pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_cloudshapeone_orange_51}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone_orange_51"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumncloudshapeoneOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearRowtheeucalyptus"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumntheeucalyptus"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_13pxv"
+                            android:layout_weight="0.83"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_lime_900_radius_24_5"
+                                android:id="@+id/btnBackButton"
+                                android:layout_height="@dimen/_49pxh"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_1pxh"
+                                android:layout_width="@dimen/_49pxh"
+                                android:paddingHorizontal="@dimen/_8pxh"
+                                android:paddingVertical="@dimen/_8pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_backbutton" tools:ignore="ContentDescription"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtTheEucalyptus"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_18pxv"
+                                android:layout_width="match_parent"
+                                android:lineSpacingExtra="@dimen/_15pxh"
+                                android:singleLine="true"
+                                android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtTheEucalyptus}"
+                                style="@style/txtPoppinsextrabold30" tools:text="@string/lbl_the_eucalyptus"/>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearRowclock"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_5pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylelime_100cornerRadius">
+                                <FrameLayout
+                                    android:id="@+id/frameStackclock"
+                                    android:layout_height="@dimen/_30pxv"
+                                    android:layout_marginBottom="@dimen/_5pxv"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_21pxh">
+                                    <ImageView
+                                    android:id="@+id/imageClock"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_21pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_clock"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_clock"/>
+                                    <ImageView
+                                    android:id="@+id/imageStar"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="@dimen/_12pxh"
+                                    android:layout_marginBottom="@dimen/_5pxv"
+                                    android:layout_marginEnd="@dimen/_4pxh"
+                                    android:layout_marginStart="@dimen/_4pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_width="@dimen/_12pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_star"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                                </FrameLayout>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtIndegeousTree"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_6pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginStart="@dimen/_13pxh"
+                                    android:layout_marginTop="@dimen/_9pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtIndegeousTree}"
+                                    style="@style/txtRobotoromanregular20" tools:text="@string/lbl_indegeous_tree"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/imageCloudshapeoneOne"
+                            android:layout_height="@dimen/_61pxh"
+                            android:layout_marginTop="@dimen/_110pxv"
+                            android:layout_width="@dimen/_62pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_cloudshapeone_orange_51}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone_orange_51"/>
+                    </LinearLayout>
+                    <HorizontalScrollView android:fillViewport="true"
+                        android:gravity="end"
+                        android:id="@+id/horizontalScrollHorizontalscrollrectanglesixteen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="match_parent" android:scrollbars="none">
+                        <LinearLayout
+                            android:id="@+id/linearRowrectanglesixteen"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/imageRectangleSixteen"
+                                android:layout_height="@dimen/_115pxh"
+                                android:layout_width="@dimen/_129pxh"
+                                android:scaleType="fitXY"
+                                cornerRadius="@{@dimen/_20pxh}"
+                                imageRes="@{@drawable/img_rectangle16}"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle16"/>
+                            <ImageView
+                                android:id="@+id/imageRectangleNineteen"
+                                android:layout_height="@dimen/_115pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_width="@dimen/_129pxh"
+                                android:scaleType="fitXY"
+                                cornerRadius="@{@dimen/_20pxh}"
+                                imageRes="@{@drawable/img_rectangle16}"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle16"/>
+                            <ImageView
+                                android:id="@+id/imageRectangleTwenty"
+                                android:layout_height="@dimen/_115pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_width="@dimen/_129pxh"
+                                android:scaleType="fitXY"
+                                cornerRadius="@{@dimen/_20pxh}"
+                                imageRes="@{@drawable/img_rectangle20}"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle20"/>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                        android:id="@+id/indicatorGroupOne"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="wrap_content"
+                        app:drawable_normal="@drawable/indicator_unselected_bg_orange_53_radius_8"
+                        app:drawable_selected="@drawable/indicator_selected_bg_lime_900_radius_8"
+                        app:indicator_size="@dimen/_5pxh" app:indicator_spacing="@dimen/_5pxh"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFunFacts"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_22pxh"
+                        android:layout_marginStart="@dimen/_22pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_15pxh"
+                        android:singleLine="true"
+                        android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtFunFacts}"
+                        style="@style/txtPoppinsextrabold30" tools:text="@string/lbl_fun_facts"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackcloudshapeoneTwo"
+                        android:layout_height="@dimen/_231pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_357pxh">
+                        <ImageView
+                            android:id="@+id/imageCloudshapeoneTwo"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_61pxh"
+                            android:layout_marginBottom="@dimen/_75pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_75pxv"
+                            android:layout_width="@dimen/_57pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_cloudshapeone_orange_51}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone_orange_51"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtDescription"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_5pxh"
+                            android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtDescription}"
+                            style="@style/txtPoppinslight20" tools:text="@string/msg_they_are_evergr"/>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:id="@+id/linearRowisthistreefo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStylered_1">
+                        <FrameLayout
+                            android:id="@+id/frameStackisthistreefo"
+                            android:layout_height="@dimen/_77pxv"
+                            android:layout_marginBottom="@dimen/_15pxv"
+                            android:layout_marginStart="@dimen/_33pxh"
+                            android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_169pxh">
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txtIsthistreefo"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:lineSpacingExtra="@dimen/_1pxh"
+                                android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtIsthistreefo}"
+                                style="@style/txtPoppinssemibold20" tools:text="@string/msg_is_this_tree_fo"/>
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtShowtheworld"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:lineSpacingExtra="@dimen/_10pxh"
+                                android:singleLine="true"
+                                android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtShowtheworld}"
+                                style="@style/txtPoppinsregular20_2" tools:text="@string/lbl_show_the_world"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/frameStackadd"
+                            android:layout_height="@dimen/_55pxv"
+                            android:layout_marginBottom="@dimen/_27pxv"
+                            android:layout_marginEnd="@dimen/_34pxh"
+                            android:layout_marginStart="@dimen/_58pxh"
+                            android:layout_marginTop="@dimen/_25pxv"
+                            android:layout_width="@dimen/_55pxh" style="@style/groupStylewhite_1">
+                            <ImageView android:id="@+id/imageAdd"
+                                android:layout_gravity="center"
+                                android:layout_height="@dimen/_50pxh"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginEnd="@dimen/_2pxh"
+                                android:layout_marginStart="@dimen/_3pxh"
+                                android:layout_marginTop="@dimen/_3pxv"
+                                android:layout_width="@dimen/_50pxh"
+                                android:scaleType="fitXY"
+                                imageRes="@{@drawable/img_add}"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_add"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <View
+                        android:background="@drawable/rectangle_bg_orange_53_radius_4_5"
+                        android:id="@+id/viewRectangleSeventyThree"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_349pxh"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackcloudshapeoneThree"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_133pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_12pxv" android:layout_width="@dimen/_368pxh">
+                        <ImageView
+                            android:id="@+id/imageCloudshapeoneThree"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_61pxh"
+                            android:layout_marginBottom="@dimen/_26pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_26pxv"
+                            android:layout_width="@dimen/_81pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_cloudshapeone_orange_51}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone_orange_51"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtWhyIsthisTre"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_5pxh"
+                            android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtWhyIsthisTre}"
+                            style="@style/txtPoppinsextrabold30" tools:text="@string/msg_why_is_this_tre"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtAshortNarrati"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_5pxh"
+                            android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtAshortNarrati}"
+                            style="@style/txtPoppinsmedium20" tools:text="@string/msg_a_short_narrati"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangletwentyone"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_291pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_29pxv" android:layout_width="@dimen/_358pxh">
+                        <ImageView
+                            android:id="@+id/imageRectangleTwentyOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_291pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_20pxh}"
+                            imageRes="@{@drawable/img_rectangle16}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle16"/>
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_lime_900_radius_31_5"
+                            android:id="@+id/btnPlayButton"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_63pxh"
+                            android:layout_marginHorizontal="@dimen/_40pxh"
+                            android:layout_marginVertical="@dimen/_40pxv"
+                            android:layout_width="@dimen/_63pxh"
+                            android:paddingHorizontal="@dimen/_13pxh"
+                            android:paddingVertical="@dimen/_13pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_playbutton" tools:ignore="ContentDescription"/>
+                    </FrameLayout>
+                    <TextView android:id="@+id/txtDescriptionOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_22pxh"
+                        android:layout_marginStart="@dimen/_22pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:text="@{specificTreeInfoVM.specificTreeInfoModel.txtDescriptionOne}"
+                        style="@style/txtPoppinsregular20_1" tools:text="@string/msg_from_this_narra"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnBackToQuiz"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_44pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_21pxv"
+                        android:layout_width="@dimen/_233pxh"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_back_to_quiz"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_back_to_quiz"/>
+                    <View android:background="@color/bluegray_100"
+                        android:id="@+id/viewRectangleFiftyNine"
+                        android:layout_height="@dimen/_76pxv"
+                        android:layout_marginTop="@dimen/_34pxv" android:layout_width="@dimen/_390pxh"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

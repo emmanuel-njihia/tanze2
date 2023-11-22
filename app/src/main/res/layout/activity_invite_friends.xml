@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="inviteFriendsVM" type="com.tanze.app.modules.invitefriends.data.viewmodel.InviteFriendsVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowcloudshapeone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="end"
+                    android:id="@+id/linearColumncloudshapeone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_weight="0.86"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <ImageView android:id="@+id/imageCloudshapeone"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_54pxh"
+                        android:layout_marginEnd="@dimen/_238pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_cloudshapeone_orange_51}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone_orange_51"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_lime_900_radius_21_5"
+                        android:id="@+id/btnGroupThirtyOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_43pxh"
+                        android:layout_marginEnd="@dimen/_236pxh"
+                        android:layout_marginStart="@dimen/_33pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="@dimen/_43pxh"
+                        android:paddingHorizontal="@dimen/_5pxh"
+                        android:paddingVertical="@dimen/_5pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_backbutton" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnellipsefive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_53pxv"
+                    android:layout_weight="0.14"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <ImageView android:gravity="start"
+                        android:id="@+id/imageEllipseFive"
+                        android:layout_height="@dimen/_49pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse4}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnrectangleseven"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameStackinviteOne"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_594pxv"
+                android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_365pxh">
+                <LinearLayout android:id="@+id/linearCloudshapeone"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangleseven"
+                        android:layout_height="@dimen/_89pxv" android:layout_width="@dimen/_103pxh">
+                        <ImageView android:id="@+id/imageRectangleSeven"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_36pxh"
+                            android:layout_marginBottom="@dimen/_18pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_18pxv"
+                            android:layout_width="@dimen/_62pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle7"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle7"/>
+                        <ImageView android:id="@+id/imageRectangleEight"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_36pxh"
+                            android:layout_marginBottom="@dimen/_25pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_25pxv"
+                            android:layout_width="@dimen/_46pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle8"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle8"/>
+                        <ImageView android:id="@+id/imageRectangleNine"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_36pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_rectangle9"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle9"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnInvite"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_9pxv"
+                            android:paddingEnd="@dimen/_10pxh"
+                            android:paddingStart="@dimen/_10pxh"
+                            android:paddingTop="@dimen/_9pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_invite"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_5" tools:text="@string/lbl_invite"/>
+                    </FrameLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnInviteOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_invite"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_5" tools:text="@string/lbl_invite"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnInviteTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_invite"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_5" tools:text="@string/lbl_invite"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnInviteThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_invite"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_5" tools:text="@string/lbl_invite"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnInviteFour"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_invite"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_5" tools:text="@string/lbl_invite"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnInviteFive"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_invite"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_5" tools:text="@string/lbl_invite"/>
+                </LinearLayout>
+                <EditText
+                    android:background="@drawable/rectangle_bg_orange_53_radius_10"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_search_name"
+                    android:id="@+id/etGroupThirtyThree"
+                    android:inputType="text"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_15pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@={inviteFriendsVM.inviteFriendsModel.etGroupThirtyThreeValue}"
+                    android:textColorHint="@color/gray_800_b2"
+                    style="@style/etSolidRounded_1" tools:ignore="Autofill"/>
+                <LinearLayout
+                    android:id="@+id/linearColumnellipsethirteen"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowellipsethirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/imageEllipseThirteen"
+                            android:layout_height="@dimen/_73pxh"
+                            android:layout_width="@dimen/_73pxh"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_ellipse4}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAdam"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_weight="0.45"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{inviteFriendsVM.inviteFriendsModel.txtAdam}"
+                            style="@style/txtOpenSansbold20" tools:text="@string/lbl_adam"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowellipsefourteen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/imageEllipseFourteen"
+                            android:layout_height="@dimen/_73pxh"
+                            android:layout_width="@dimen/_73pxh"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_ellipse4}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtBeatrice"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_weight="0.54"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{inviteFriendsVM.inviteFriendsModel.txtBeatrice}"
+                            style="@style/txtOpenSansbold20" tools:text="@string/lbl_beatrice"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowellipsefifteen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageEllipseFifteen"
+                            android:layout_height="@dimen/_73pxh"
+                            android:layout_width="@dimen/_73pxh"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_ellipse4}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtCatherine"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_weight="0.58"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{inviteFriendsVM.inviteFriendsModel.txtCatherine}"
+                            style="@style/txtOpenSansbold20" tools:text="@string/lbl_catherine"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowellipsesixteen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageEllipseSixteen"
+                            android:layout_height="@dimen/_73pxh"
+                            android:layout_width="@dimen/_73pxh"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_ellipse4}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtDanson"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_weight="0.51"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{inviteFriendsVM.inviteFriendsModel.txtDanson}"
+                            style="@style/txtOpenSansbold20" tools:text="@string/lbl_danson"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowellipseseventeen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/imageEllipseSeventeen"
+                            android:layout_height="@dimen/_73pxh"
+                            android:layout_width="@dimen/_73pxh"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_ellipse4}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEsther"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_weight="0.47"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{inviteFriendsVM.inviteFriendsModel.txtEsther}"
+                            style="@style/txtOpenSansbold20" tools:text="@string/lbl_esther"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowellipseeighteen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/imageEllipseEighteen"
+                            android:layout_height="@dimen/_73pxh"
+                            android:layout_width="@dimen/_73pxh"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_ellipse4}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtFaith"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_weight="0.42"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{inviteFriendsVM.inviteFriendsModel.txtFaith}"
+                            style="@style/txtOpenSansbold20" tools:text="@string/lbl_faith"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowcloudshapeoneOne"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowellipsenineteen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.64"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageEllipseNineteen"
+                        android:layout_height="@dimen/_73pxh"
+                        android:layout_width="@dimen/_73pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse4}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGeofferry"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_21pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_23pxv"
+                        android:layout_weight="0.57"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{inviteFriendsVM.inviteFriendsModel.txtGeofferry}"
+                        style="@style/txtOpenSansbold20" tools:text="@string/lbl_geofferry"/>
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/frameStackcloudshapeoneOne"
+                    android:layout_height="@dimen/_69pxv"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginStart="@dimen/_77pxh" android:layout_width="@dimen/_103pxh">
+                    <ImageView android:id="@+id/imageCloudshapeoneOne"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_61pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_81pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_cloudshapeone_orange_51}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_cloudshapeone_orange_51"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnInviteSix"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_invite"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_5" tools:text="@string/lbl_invite"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View android:background="@color/bluegray_100"
+                android:id="@+id/viewRectangleFiftyNine"
+                android:layout_height="@dimen/_76pxv"
+                android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_390pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

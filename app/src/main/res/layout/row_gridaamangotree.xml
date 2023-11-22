@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gridaamangotreeRowModel" type="com.tanze.app.modules.treesenglishpage.data.model.GridaamangotreeRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnaamangotree"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleamber_100cornerRadius">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtAAMangotree"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_29pxv"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent"
+            android:text="@{gridaamangotreeRowModel.txtAAMangotree}"
+            style="@style/txtMontserratromanregular20" tools:text="@string/lbl_a_a_mango_tree"/>
+    </LinearLayout>
+</layout>

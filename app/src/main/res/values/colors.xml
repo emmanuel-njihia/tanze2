@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<color name="gray_400">#b3b3b3</color>
+<color name="gray_500">#9ca69c</color>
+<color name="green_51">#e1ffe0</color>
+<color name="gray_401">#c5c5c5</color>
+<color name="lime_900">#904907</color>
+<color name="bluegray_100">#d9d9d9</color>
+<color name="amber_100">#fee5bf</color>
+<color name="amber_200">#ffe095</color>
+<color name="black_900_3f">#3f000000</color>
+<color name="green_50">#e1ffe1</color>
+<color name="red_51">#feeded</color>
+<color name="orange_200">#ffc692</color>
+<color name="red_50">#ffeeee</color>
+<color name="lime_100">#f9e4d0</color>
+<color name="orange_53">#fff4e4</color>
+<color name="orange_50">#fff3e4</color>
+<color name="black_900">#000000</color>
+<color name="bluegray_400">#7b8395</color>
+<color name="black_900_60">#60000000</color>
+<color name="gray_800_b2">#b23a3a3a</color>
+<color name="white_A700">#ffffff</color>
+<color name="yellow_100">#ffe9ca</color>
+</resources>
